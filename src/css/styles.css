@@ -6,18 +6,17 @@
 /* Feel free to add as many of these imports as you need */
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
   background-color: #706C61;
 }
 
+/*
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-}
+}*/
 
 .header {
   background-color: #f8f4e380;
@@ -56,10 +55,35 @@ body {
   max-height: auto;
 }
 
+.box-container {
+  padding: 20px;
+}
+
+.box{
+align-items: center;
+width: 50%;
+float: left;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.485);
+color: white;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.box-1{
+  text-align: left;
+  width: 50%;
+  float: left;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  }
+
 .footer {
   background-color: #f8f4e380;
   color: black;
   padding: 16px;
   display: flex;
   align-items: center;
+  position:static;
 }
