@@ -8,6 +8,7 @@
 body {
   color: var(--color-primary);
   background-color: var(--color-secondary);
+  background-color: #706C61;
 }
 
 .centered {
@@ -16,4 +17,49 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.header {
+  background-color: #f8f4e380;
+  color: black;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+/**this .header > ul i got inspiration from oliver on when he showed us on meeting 29.09.23**/
+.header > ul {
+  list-style:none;
+  display: flex;
+  gap: 5vh;
+  margin-left: 10%;
+}
+
+.active-btn {
+  color:black;
+  font-size: 20px;
+  max-width: 10vh;
+  width:auto;
+  text-align: center;
+}
+
+.inactive-btn {
+  color: black;
+  font-size: 20px;
+  max-width: 10vh;
+  width: auto;
+  text-align: center;
+}
+
+.logo {
+  object-fit: fixed;
+  max-width: 14vh;
+  max-height: auto;
+}
+
+.footer {
+  background-color: #f8f4e380;
+  color: black;
+  padding: 16px;
+  display: flex;
+  align-items: center;
 }
