@@ -8,15 +8,6 @@
 body {
   background-color: #706C61;
 }
-
-/*
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}*/
 /**this is the header**/
 .header {
   background-color: #f8f4e380;
@@ -55,17 +46,23 @@ body {
   max-width: 14vh;
   max-height: auto;
 }
+
+
+/**this is for main/index page**/
+#index-page{
 /**this is the box container**/
 .box-container {
-  padding: 20px;
-  height: 800px;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 /**this is the left box**/
 .box{
 align-items: center;
-width: 35%;
-max-height:400px;
-height: 400px;
+width: 50%;
+max-height:500px;
+height: 500px;
 float: left;
 padding: 20px;
 background-color: rgba(0, 0, 0, 0.485);
@@ -79,8 +76,8 @@ border-bottom-left-radius: 2rem;
 .box-1{
   text-align: left;
   width: 35%;
-  max-height:400px;
-  height: 400px;
+  max-height:500px;
+  height: 500px;
   float: left;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.699);
@@ -89,9 +86,41 @@ border-bottom-left-radius: 2rem;
   overflow-y: hidden;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  
   }
+}
+
+
+/**this is for profile page**/
+
+#profile-page {
+  .profile {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 30rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 2rem;
+  }
+  .profile-info{
+    background-color: white;
+    max-width: 10rem;
+    position: grid;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+
 /**footer**/
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #f8f4e380;
   color: black;
   padding: 16px;
