@@ -27,7 +27,7 @@ body {
 /**this is the active button**/
 .btn {
   font-size: 20px;
-  max-width: 12vh;
+  max-width: 13vh;
   width: 130px;
   text-align: center;
   padding: 5px;
@@ -96,7 +96,7 @@ border-bottom-left-radius: 2rem;
   overflow-y: hidden;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  
+   
   }
 }
 
@@ -104,6 +104,13 @@ border-bottom-left-radius: 2rem;
 /**this is for profile page**/
 
 #profile-page {
+
+  .position {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .profile {
     position:absolute;
     top: 50%;
@@ -114,6 +121,7 @@ border-bottom-left-radius: 2rem;
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.50);
     padding: 2rem;
+    overflow-y: hidden;
   }
   .profile-info{
     background-color: white;
@@ -123,6 +131,7 @@ border-bottom-left-radius: 2rem;
     padding: 1rem;
     border-radius: 1rem;
   }
+
 }
 
 
