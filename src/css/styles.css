@@ -25,21 +25,31 @@ body {
   margin-left: 10%;
 }
 /**this is the active button**/
-.active-btn {
-  color:black;
+.btn {
   font-size: 20px;
-  max-width: 10vh;
-  width:auto;
+  max-width: 12vh;
+  width: 130px;
   text-align: center;
+  padding: 5px;
+  transition: background-color 2s ease-out 100ms;
+  border-radius: 1vh;
 }
 /**this is the inactive button**/
-.inactive-btn {
-  color: black;
-  font-size: 20px;
-  max-width: 15vh;
-  width: auto;
-  text-align: center;
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.185);
 }
+
+.btn-text {
+  color: black;
+  text-decoration: none;
+  transition: background-color 2s ease-out 100ms;
+}
+
+.btn-text:hover {
+  color: rgb(0, 0, 0);
+}
+
+
 /**this is the logo**/
 .logo {
   object-fit: fixed;
