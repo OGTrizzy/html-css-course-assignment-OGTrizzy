@@ -71,7 +71,7 @@ body {
 /**this is the left box**/
 .box{
 align-items: center;
-width: 50%;
+width: 30rem;
 max-height:500px;
 height: 500px;
 float: left;
@@ -86,7 +86,7 @@ border-bottom-left-radius: 2rem;
 /**this is the right box**/
 .box-1{
   text-align: left;
-  width: 35%;
+  width: auto;
   max-height:500px;
   height: 500px;
   float: left;
@@ -132,7 +132,32 @@ border-bottom-left-radius: 2rem;
     padding: 1rem;
     border-radius: 1rem;
   }
+}
+/**this is for movie list page**/
+#movielist-page{
 
+  .box-container{
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .box-container2{
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .test{
+    display: inline-block;
+    padding: 1rem;
+    vertical-align: middle;
+    background-color: white;
+    max-width: 150px;
+    max-height: 300px;
+    width: 150px;
+    height:300px;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+  }
 }
 
 
