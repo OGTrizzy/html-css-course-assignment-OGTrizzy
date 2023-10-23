@@ -35,7 +35,7 @@ body {
   padding: none;
   margin: none;
 }
-   
+/**this menu li and that i copied, forgot to save where i got it from, but some of the code on this list is not written by me**/
 #menu li a, #menu li span{
   display: inline-block;
   color: #000000;
@@ -107,7 +107,7 @@ border-bottom-left-radius: 2rem;
   min-height: 100%;
   width: 150px;
   height: 70rem;
-  /**this code of line i got from figma**/
+  /**this line of code i got from figma**/
   background: radial-gradient(201.53% 100% at 0% 0%, #7D80DA 0%, rgba(42, 43, 42, 0.75) 32.54%), radial-gradient(201.53% 100% at 100% 100%, #7D80DA 8.37%, rgba(42, 43, 42, 0.00) 58.71%);
 }
 }
