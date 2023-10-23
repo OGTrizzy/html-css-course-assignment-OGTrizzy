@@ -229,6 +229,7 @@ border-bottom-left-radius: 2rem;
 
 }
 
+/**this is for the movieinfo page**/
 #movieinfo-page{
   .background{
     background-image:
@@ -240,6 +241,8 @@ border-bottom-left-radius: 2rem;
       min-height: 100%;
       min-width: 100%;
   }
+
+  /**this is the background box for the movie picture and the cast members**/
   .box{
     background-color: rgba(0, 0, 0, 0.485);
     position:absolute;
@@ -282,30 +285,36 @@ border-bottom-left-radius: 2rem;
   }
   .cast{
     overflow: hidden;
+    margin-top: 15%;
   }
   .description{
     max-width: 90%;
-    width: 400px;
   }
-  img{
-    max-width: 100%;
-    max-width: 100%;
+  .picture{
+    height: 100%;
+    width: 80px;
+    border-radius: 50px;
   }
-  .dwayne {
-    overflow: hidden;
+ /** .dwayne {
+    height: 10%;
+    width: 80px;
   }
   .jason{
-    background-image: url(../../assets/images/jason.jpg);
+    height: 10%;
+    width: 80px;
   }
   .idris{
-    background-image: url(../../assets/images/idris.png);
+    height: 10%;
+    width: 80px;
   }
   .vanessa{
-    background-image: url(../../assets/images/vanessa.jpg);
+    height: 10%;
+    width: 80px;
   }
   .helen{
-    background-image: url(../../assets/images/helen.jpg);
-  }
+    height: 10%;
+    width: 80px;
+  }**/
 }
 
 
