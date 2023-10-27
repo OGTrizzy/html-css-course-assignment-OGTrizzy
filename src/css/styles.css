@@ -387,6 +387,8 @@ border-bottom-left-radius: 2rem;
     padding-top: 2rem;
     z-index: 5;
   }
+  /**i just learned that doing this way is more clean than the way i did untill now, 
+  will try my best doing this way from now on**/
   .left, .right, .text-decoration{
     color: #ffffff;
   }
