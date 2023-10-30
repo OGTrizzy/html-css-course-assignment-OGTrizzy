@@ -63,6 +63,21 @@ body {
   max-height: auto;
 }
 
+/**footer**/
+.footer{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  background-color: #f8f4e380;
+  color: black;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  max-height: 4rem;
+  z-index: 100;
+}
+
 
 /**this is for main/index page**/
 #index-page{
@@ -109,7 +124,8 @@ border-bottom-left-radius: 2rem;
   width: 150px;
   height: 70rem;
   /**this line of code i got from figma**/
-  background: radial-gradient(201.53% 100% at 0% 0%, #7D80DA 0%, rgba(42, 43, 42, 0.75) 32.54%), radial-gradient(201.53% 100% at 100% 100%, #7D80DA 8.37%, rgba(42, 43, 42, 0.00) 58.71%);
+  background: radial-gradient(201.53% 100% at 0% 0%, #7D80DA 0%, rgba(42, 43, 42, 0.75) 32.54%), 
+  radial-gradient(201.53% 100% at 100% 100%, #7D80DA 8.37%, rgba(42, 43, 42, 0.00) 58.71%);
 }
 }
 
@@ -403,21 +419,102 @@ border-bottom-left-radius: 2rem;
   'GRAD' 0,
   'opsz' 24;
 }
-
+}
+/**this is for checkout page**/
+#checkout-page{
+/**this is the box in the middle of screen**/
+  .box{
+    position: absolute;
+    width:fit-content;
+    min-width: fit-content;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  /**this is the layout fix for left/right side of the box**/
+  .grid, .right{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0%;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 5%;
+    padding-top: 2rem;
+    z-index: 5;
+    width: fit-content;
+  }
+  .left{
+    max-width: 15rem;
+  }
+  .left, .prices{
+    color: black;
+    align-self: center;
+    justify-self: center;
+  }
+  .shopping-list{
+    background-color: #ffffff;
+    border-radius: 2rem;
+    width: 20%;
+    height: 40%;
+    min-width: 13rem;
+    min-height: 15rem;
+  }
+  .title, .button{
+    text-align: center;
+  }
+  .shopping-items, .cards, .card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #000000;
+    padding-left: 1rem;
+    width:fit-content;
+    min-width: fit-content;
+  }
+  .cardpayment{
+    color: white;
+  }
+  .right{
+    width: 100%;
+    min-width: 50%;
+  }
+  .pay-box{
+    background-color: #ffffff;
+    width:80%;
+    height: 10%;
+    border-radius: 5px;
+    padding: 0.05px;
+    overflow:hidden;
+  }
+  .fit-content{
+    max-width: 50%;
+  }
+  .button, #reset{
+    position: absolute;
+    max-width: 3rem;
+    width: 3rem;
+    height: fit-content;
+    left: 50%;
+    bottom: 4rem;
+    z-index: 50;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-out 50ms;
+    color: #ffffff;
+  }
+  .button:hover, #reset:hover{
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #reset{
+    text-decoration: none;
+  }
 }
 
 
-/**footer**/
-.footer {
-  position: fixed;
-  bottom:0;
-  width: 100%;
-  background-color: #f8f4e380;
-  color: black;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  border-radius: 1rem;
-  max-height: 4rem;
-  z-index: 100;
-}
+
+
