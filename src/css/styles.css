@@ -456,6 +456,7 @@ border-bottom-left-radius: 2rem;
     align-self: center;
     justify-self: center;
   }
+  /**this is the shopping list**/
   .shopping-list{
     background-color: #ffffff;
     border-radius: 2rem;
@@ -467,6 +468,7 @@ border-bottom-left-radius: 2rem;
   .title, .button{
     text-align: center;
   }
+  /**this is for the config/layout design for payment info thing**/
   .shopping-items, .cards, .card-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -494,27 +496,54 @@ border-bottom-left-radius: 2rem;
     max-width: 50%;
   }
   .button, #reset{
-    position: absolute;
-    max-width: 3rem;
-    width: 3rem;
-    height: fit-content;
     left: 50%;
     bottom: 4rem;
-    z-index: 50;
-    border-radius: 10px;
-    transition: background-color 0.5s ease-out 50ms;
-    color: #ffffff;
   }
-  .button:hover, #reset:hover{
-    background: #000000;
-    color: #ffffff;
-    text-decoration: none;
+}
+/**this is for the checkout success page**/
+#checkoutsucsess-page{
+  .box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 20rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 2rem;
+    overflow-y: hidden;
   }
-  #reset{
-    text-decoration: none;
+  .text{
+    color: #ffffff;
+    text-align: center;
+  }
+  .button, #reset{
+    left: 45%;
+    bottom: 2rem;
   }
 }
 
 
-
-
+/**this is the config for the button on checkout and checkoutsucsess page**/
+#reset{
+  position: absolute;
+  max-width: 10rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  left: 50%;
+  bottom: 4rem;
+  z-index: 50;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-out 50ms;
+  color: #ffffff;
+}
+#reset:hover{
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+#reset{
+  text-decoration: none;
+}
