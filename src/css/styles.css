@@ -523,6 +523,28 @@ border-bottom-left-radius: 2rem;
     bottom: 2rem;
   }
 }
+/**this is for the my movies/inventory page**/
+#inventory-page{
+  .box-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0%;
+    width: 100%;
+    padding-left: 5rem;
+    padding-top: 7rem;
+    z-index: 5;
+  }
+  .movie-box{
+    display: flex;
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+}
 
 
 /**this is the config for the button on checkout and checkoutsucsess page**/
