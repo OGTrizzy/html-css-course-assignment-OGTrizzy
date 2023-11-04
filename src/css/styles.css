@@ -127,6 +127,12 @@ border-bottom-left-radius: 2rem;
   background: radial-gradient(201.53% 100% at 0% 0%, #7D80DA 0%, rgba(42, 43, 42, 0.75) 32.54%), 
   radial-gradient(201.53% 100% at 100% 100%, #7D80DA 8.37%, rgba(42, 43, 42, 0.00) 58.71%);
 }
+.button{
+  position: fixed;
+  top: 75%;
+  left: 5%;
+  width: 80px;
+}
 }
 
 
@@ -497,9 +503,12 @@ border-bottom-left-radius: 2rem;
   .fit-content{
     max-width: 50%;
   }
-  .button, #reset{
-    left: 50%;
-    bottom: 4rem;
+  .button{
+    position: fixed;
+    top: 70%;
+    left: 60%;
+    width: 80px;
+    z-index: 100;
   }
 }
 /**this is for the checkout success page**/
@@ -605,7 +614,6 @@ border-bottom-left-radius: 2rem;
   width: fit-content;
   height: fit-content;
   padding: 10px;
-  left: 50%;
   bottom: 4rem;
   z-index: 50;
   border-radius: 10px;
