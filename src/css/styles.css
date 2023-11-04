@@ -227,7 +227,7 @@ border-bottom-left-radius: 2rem;
     padding-top: 2rem;
     z-index: 5;
   }
-  .movie-box{
+  .movie-box, .movie-box > a > img{
     display: flex;
     width: 200px;
     height: 300px;
@@ -535,7 +535,7 @@ border-bottom-left-radius: 2rem;
     padding-top: 7rem;
     z-index: 5;
   }
-  .movie-box{
+  .movie-box, .movie-box > a > img{
     display: flex;
     width: 200px;
     height: 300px;
@@ -544,6 +544,17 @@ border-bottom-left-radius: 2rem;
     border-radius: 5px;
     background-color: #ffffff;
   }
+  .picture-fit{
+    height: 100%;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+  }
+  .picture-fit:hover{
+    transform: scale(1.1);
+  }
+}
+#play-movies-page{
+  
 }
 
 
