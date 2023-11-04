@@ -162,7 +162,9 @@ border-bottom-left-radius: 2rem;
   }
 }
 
-/**this is for movie list page**/
+/**this is for movie list page
+                                  note: this is the for the page of list of movies, not inventory but movie list to buy movies
+**/
 #movielist-page{
   .background{
     position:static;
@@ -232,7 +234,7 @@ border-bottom-left-radius: 2rem;
     width: 200px;
     height: 300px;
     flex-direction: column;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.50);
     border-radius: 5px;
   }
   .picture-fit{
@@ -523,7 +525,9 @@ border-bottom-left-radius: 2rem;
     bottom: 2rem;
   }
 }
-/**this is for the my movies/inventory page**/
+/**this is for the my movies/inventory page 
+                                              note:  not the movie list but inventory, 2 different pages
+**/
 #inventory-page{
   .box-container{
     position: relative;
@@ -540,7 +544,7 @@ border-bottom-left-radius: 2rem;
     width: 200px;
     height: 300px;
     flex-direction: column;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.50);
     border-radius: 5px;
     background-color: #ffffff;
   }
@@ -553,8 +557,44 @@ border-bottom-left-radius: 2rem;
     transform: scale(1.1);
   }
 }
-#play-movies-page{
-  
+/**idk how to do this working yet, but this is for the movie player page to "watch the movie"**/
+/**this is the css part for the movie player page**/
+#play-movie-page{
+  .movieplayer{
+    background-color:#1d1d1d;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    min-height: 50%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.50);
+  }
+  .play-button{
+    top: 50%;
+    left: 50%;
+    scale: 2;
+  }
+  .fullscreen{
+    top: 95%;
+    left: 95%;
+  }
+  .volume{
+    top: 95%;
+    left: 90%;
+  }
+  .time{
+    top: 95%;
+    left: 10%;
+  }
+  .play-button, .fullscreen, .volume, .time{
+    position:fixed;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    color: white;
+  }
 }
 
 
