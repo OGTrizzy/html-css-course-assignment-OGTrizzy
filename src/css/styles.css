@@ -4,9 +4,13 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
+@import url(../css/webfontkit/stylesheet.css);
 
 body {
   background-color: #706C61;
+  font-family: 'inria_sansregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
 }
 /**this is the header**/
 .header {
@@ -87,6 +91,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'inria_sansregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
   }
 /**this is the left box**/
 .box{
@@ -98,7 +105,6 @@ float: left;
 padding: 20px;
 background-color: rgba(0, 0, 0, 0.485);
 color: white;
-font-family:Arial, Helvetica, sans-serif;
 overflow-y: hidden;
 border-top-left-radius: 2rem;
 border-bottom-left-radius: 2rem;
@@ -113,7 +119,6 @@ border-bottom-left-radius: 2rem;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.699);
   color: white;
-  font-family:Arial, Helvetica, sans-serif;
   overflow-y: hidden;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -145,6 +150,7 @@ border-bottom-left-radius: 2rem;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
   }
   .profile {
     position:absolute;
@@ -173,7 +179,7 @@ border-bottom-left-radius: 2rem;
 **/
 #movielist-page{
   .background{
-    position:static;
+    position:static; 
   }
  /**this is the text and layout for positioning for text and the picture**/
   .upper-page{
