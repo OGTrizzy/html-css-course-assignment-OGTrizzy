@@ -1,7 +1,7 @@
 import { API } from './API.mjs';
 
 function getAllMovies(){
-    return fetch(API)
+    fetch(API)
     .then(response => response.json())
     .catch(error => console.error('Error:', error));
 }
@@ -19,3 +19,5 @@ document.getElementById('genreDropdown').addEventListener('change', (event) => {
         updateMovieList(filteredMovies);
     });
 });
+
+console.log(getAllMovies());
