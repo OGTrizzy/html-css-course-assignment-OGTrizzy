@@ -7,7 +7,7 @@
   <title>SquareEyes MovieInfo</title>
   <link rel="stylesheet" href="src/css/styles.css">
   <link rel="icon" href="assets/images/SquareEyes_Logo.png">
-  <script type="module" src="cart.mjs"></script>
+  <script type="module" src="./movieinfo.mjs"></script>
 </head>
 
 <body id="movieinfo-page">
@@ -47,56 +47,22 @@
   <div class="box">
 <!--this is the right and left side of the box in the middle-->
     <div class="right">
-      <div class="right-photo"></div>
+      <div class="right-photo">
+        <img id="image">
+      </div>
     </div>
     <div class="left">
       <div>
-        <h1>Hobbs & Shaw</h1>
+        <h1 id="title"></h1>
       </div>
-      <div class="description">
-        <p>
-          US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain.
-        </p>
-        <div id="menu">
-          <li>
-            <a href="checkout.html">Buy for 5$</a>
-          </li>
-        </div>
+      <div class="description222">
+        <p id="description"></p>
+        <p id="genre"></p>
+        <p id="price"></p>
       </div>
     </div>
     <div class="float-container">
-      <ul>
-        <div class="float-child">
-          <img class="picture" src="assets/images/dwayne.png" alt="picture of dwayne johnson">
-          <p>
-            Dwayne Johnson (Hobbs)
-          </p>
-        </div>
-        <div class="float-child">
-          <img class="picture" src="assets/images/jason.jpg" alt="picture of jason statham">
-          <p>
-            Jason Statham (Shaw)
-          </p>
-        </div>
-        <div class="float-child">
-          <img class="picture" src="assets/images/idris.png" alt="picture of idris elba">
-          <p>
-            Idris Elba (Brixton)
-          </p>
-        </div>
-        <div class="float-child">
-          <img class="picture" src="assets/images/vanessa.jpg" alt="picture of vanessa kirby">
-          <p>
-            Vanessa Kirby (Hattie)
-          </p>
-        </div>
-        <div class="float-child">
-          <img class="picture" src="assets/images/helen.jpg" alt="picture of vanessa kirby">
-          <p>
-            Helen Mirren (Queenie)
-          </p>
-        </div>
-      </ul>  
+  
     </div>
     
 

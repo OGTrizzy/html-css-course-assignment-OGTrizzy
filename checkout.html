@@ -7,6 +7,7 @@
   <title>SquareEyes Checkout</title>
   <link rel="stylesheet" href="src/css/styles.css">
   <link rel="icon" href="assets/images/SquareEyes_Logo.png">
+  <script type="module" src="./cart.mjs"></script>
 </head>
 </div>
 
@@ -48,15 +49,9 @@
       <div class="shopping-list">
         <div class="title"><h3>Shopping List</h3></div>
         <div class="shopping-items">
-          <div class="left">
-            <p>
-              Hobbs & Shaw
-            </p>
+          <div class="left" id="movie-title">
           </div>
-          <div class="prices">
-            <p>
-              5$
-            </p>
+          <div class="prices" id="movie-price">
           </div>
         </div>
       </div>
@@ -79,34 +74,6 @@
           <div>
             <label for="CVC">CVC</label>
             <input type="text"><br>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="right">
-      <div class="info">
-        <label for="Vipps">Vipps</label> <br>
-        <br>
-        <label for="paypal">Paypal</label><br>
-        <br>
-        <br>
-        <label for="BTC">BTC</label><br>
-        <br>
-        <br>
-        <label for="ETH">ETH</label>
-      </div>
-      <div class="input">
-        <input type="text"><br>
-        <br>
-        <input type="text"><br>
-        <br>
-        <div class="pay-box">
-          <p>3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5</p>
-        </div>
-        <br>
-        <div class="pay-box">
-          <div class="fit-content">
-            <p>0x71C7656EC7ab88b098defB751B7401B5f6d8976F</p>
           </div>
         </div>
       </div>

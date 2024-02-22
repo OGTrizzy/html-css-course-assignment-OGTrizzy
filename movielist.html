@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="src/css/styles.css">
   <link rel="icon" href="assets/images/SquareEyes_Logo.png">
   <script type="module" src="filter.mjs"></script>
-  <script type="module" src="API.mjs"></script>
 </head>
 
 <body id="movielist-page">
@@ -52,15 +51,23 @@
         <p>From classic westerns and war films to modern action hero adventures,
           find what you are looking for right here. </p>
         <p>Get your kung fu bullet time extravaganzas with the best action movies on Square eyes.</p>
-        <select id="genreDropdown">
-          <option value="">All</option>
-          <option value="Action">Action</option>
-          <option value="Horror">Horror</option>
-          <option value="Drama">Drama</option>
-          <option value="Kids">Kids</option>
-        </select>
+
+          <select id="genreFilter">
+            <option value="all">All movies</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Horror">Horror</option>
+            <option value="Drama">Drama</option>
+            <option value="Kids">Kids</option>
+          </select>
+
+          <div id="cart">
+            <ul id="cart-items"></ul>
+            <div id="cart-count"></div>
+          </div>
+
+
       </div>
-        <div></div>
       <div class="right">
         <div class="background-filter">
           <div class="banner">
@@ -69,45 +76,8 @@
         </div>
       </div>
     </div>
-  
-    <div class="box-container" id="movieContainer">
-      <div class="movie-box">
-        <a href="movieinfo.html">
-           <img class="picture-fit" src="assets/images/Square_Eyes_Cover1.jpeg" alt="Banner for Hobbs & Shaw">
-          </a>
-        </div>
-        <div class="movie-box">
-          <img class="picture-fit" src="assets/images/Square_Eyes_Cover2.jpeg" alt="Banner for Godzilla">
-        </div>
-        <div class="movie-box">
-          <img class="picture-fit" src="assets/images/Square_Eyes_Cover3.jpeg" alt="Banner for Once upon time in hollywood">
-        </div>
-        <div class="movie-box">
-          <img class="picture-fit" src="assets/images/Square_Eyes_Cover4.jpeg" alt="Banner for Scream">
-        </div>
-  
-    </div>
-    <div class="box-container">
-      <div class="movie-box">
-        <img class="picture-fit" src="assets/images/Square_Eyes_Cover5.jpeg" alt="Banner for Sweetheart">
-      </div>
-      <div class="movie-box">
-        <img class="picture-fit" src="assets/images/Square_Eyes_Cover6.jpeg" alt="Banner for The Addams Family">
-      </div>
-      <div class="movie-box">
-        <img class="picture-fit" src="assets/images/Square_Eyes_Cover7.jpeg" alt="Banner for Batman">
-      </div>
-      <div class="movie-box">
-        <img class="picture-fit" src="assets/images/Square_Eyes_Cover8.jpeg" alt="Banner for Toy story 4">
-      </div>
-  
-    </div>
-  </div>
 
-
-
-
-
+    <div id="movieList"></div>
   <!--this is the footer-->
   <footer>
     <div class="footer">
