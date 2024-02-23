@@ -1,6 +1,4 @@
 //- As a user, I want to remove a product from my basket.
-//- As a user, I want to view an order-confirmation screen after checking out.
-
 function fetchMovies() {
   fetch('https://api.noroff.dev/api/v1/square-eyes')
     .then(response => response.json())
@@ -61,7 +59,6 @@ function addToCart(item, data) { //this adds items to the cart in the local stor
   const cart = JSON.parse(localStorage.getItem('cart'));
   const selectedItem = data.find((movie) => movie.id === item.id);
   cart.push(selectedItem);
-  console.log(cart);
   localStorage.setItem('cart', JSON.stringify(cart));
   total += selectedItem.price;
   updateCart();
