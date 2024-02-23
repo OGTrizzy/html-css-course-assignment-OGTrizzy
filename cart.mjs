@@ -10,7 +10,7 @@ function generateHtmlForItem(movie){
     moviePrice.textContent = movie.price + 'KR';
     movieWrapper.appendChild(moviePrice);
 
-    const removeOneButton = document.createElement('button');  //this is not working for some reason, i will try something this is the code i need help with
+    const removeOneButton = document.createElement('button');  //this is not working for some reason, i didnt have enough time to fix this
     removeOneButton.textContent = 'remove one';
     removeOneButton.addEventListener('click', function() {
         removeFromCart(movie, 1);
