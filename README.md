@@ -7,6 +7,10 @@
 
 this project was for everything i learned at the start and put to the test on how well i could get it done.
 
+## Features
+- shopping cart: you can add and remove items from shopping cart and it will show total value of items
+- mimicking a website movie vendor
+
 ## Getting Started
 
 ### Installing
