@@ -2,14 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="this is the home page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Title, replace me!</title>
+  <title>SquareEyes Home</title>
   <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" href="assets/images/SquareEyes_Logo.png">
+  <script defer src="script.js"></script>
 </head>
-<body class="centered">
-  <div>
-    <img src="/assets/images/noroff-logo.png" alt="Noroff Logo">
-    <h1>Hello World!</h1>
+
+<body id="index-page">
+  <header>
+    <nav> 
+        <!--this i got from https://www.geeksforgeeks.org/html-course-building-header-of-the-website/ -->
+        <!--this is the header-->
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img class="logo" src="assets/images/SquareEyes_Logo.png" alt="SquareEyes Logo"></a>
+        </div>
+        <div id="menu">
+
+          <ul>
+            <li>
+              <a href="profilepage.html">Profile</a>
+            </li>
+            <li>
+                <a href="inventory.html">My movies</a>
+            </li>
+            <li>
+                <a href="movielist.html">Browse</a>
+            </li>
+            <li>
+                <a href="checkout.html">Cart</a>
+            </li>
+        </ul>
+
+        </div>
+          
+      </div>
+        <!--this is the end of the copied codes, i made some changes to fit the site-->
+    </nav>
+</header>
+
+<!--this is the background art thing-->
+<div class="background"></div>
+
+<!--this is the middle box-->
+<div class="box-container">
+  <!--this is the left side of the box-->
+  <div class="box">
+    <h1>Newly released movies and pre-released movies here!</h1>
+    <h3>Tell your inner couch potato to get comfortable, because you've got hundreds of movies to watch.
+      Our goal is to connect film-lovers!</h3>
+
+      <h4>Join us today!</h4>
+      <div class="button">
+        <a id="reset" href="profilepage.html">Sign up</a>
+      </div>
   </div>
+  <!--this is the right side of the box-->
+  <div class ="box-1">
+    <h1>
+      Up next
+    </h1>
+    <ul>
+      <li><h3>Hobbs & Shaw (2019)</h3></li>
+      <li><h3>Insidious: the red door (2023)</h3></li>
+      <li><h3>Fast & Furious 20 (2023)</h3></li>
+      <li><h3>Avengers: the final time (2023)</h3></li>
+      <li><h3>Al Pacino (2023)</h3></li>
+      <li><h3>and more!</h3></li>
+    </ul>
+  </div>
+</div>
+
+
+<!--this is the footer-->
+<footer>
+    <div class="footer">
+        <p> all right covered &copy;</p>
+      <div id="menu">
+
+        <li>
+          <a href="contactus.html">Contact us</a>
+        </li>
+        <li>
+          <a href="about.html">About us</a>
+        </li>
+
+      </div>    
+    </div>
+</footer>
+
+
 </body>
 </html>

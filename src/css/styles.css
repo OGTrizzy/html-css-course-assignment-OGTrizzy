@@ -4,16 +4,634 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
+@import url(../css/webfontkit/stylesheet.css);
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  background-color: #706C61;
+  font-family: 'inria_sansregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+}
+/**this is the header**/
+.header {
+  position: absolute;
+  background-color: #f8f4e380;
+  color: black;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  width: 100%;
+  max-height: 4rem;
+  overflow: hidden;
+  z-index: 100;
+}
+/**this .header > ul i got inspiration from oliver on when he showed us on meeting 29.09.23**/
+.header > ul {
+  list-style:none;
+  display: flex;
+  gap: 5vh;
+  margin-left: 10%;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+/**this is the button**/
+#menu li{
+  display: inline-block;
+  padding: none;
+  margin: none;
+}
+/**this menu li and that i copied, forgot to save where i got it from, but some of the code on this list is not written by me**/
+#menu li a, #menu li span{
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 13vh;
+  width: 130px;
   text-align: center;
+  padding: 5px;
+  transition: background-color 0.5s ease-out 50ms;
+  border-radius: 1vh;
+}
+#menu li:hover a, #menu li span{
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/**this is the logo**/
+.logo {
+  object-fit: fixed;
+  max-width: 14vh;
+  max-height: auto;
+}
+
+/**footer**/
+.footer{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  background-color: #f8f4e380;
+  color: black;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  max-height: 4rem;
+  z-index: 100;
+}
+
+
+/**this is for main/index page**/
+#index-page{
+/**this is the box container**/
+.box-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'inria_sansregular', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  }
+/**this is the left box**/
+.box{
+align-items: center;
+width: 30rem;
+max-height:500px;
+height: 500px;
+float: left;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.485);
+color: white;
+overflow-y: hidden;
+border-top-left-radius: 2rem;
+border-bottom-left-radius: 2rem;
+}
+/**this is the right box**/
+.box-1{
+  text-align: left;
+  width: auto;
+  max-height:500px;
+  height: 500px;
+  float: left;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  overflow-y: hidden;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  }
+.background {
+  min-width: 100%;
+  min-height: 100%;
+  width: 150px;
+  height: 70rem;
+  /**this line of code i got from figma**/
+  background: radial-gradient(201.53% 100% at 0% 0%, #7D80DA 0%, rgba(42, 43, 42, 0.75) 32.54%), 
+  radial-gradient(201.53% 100% at 100% 100%, #7D80DA 8.37%, rgba(42, 43, 42, 0.00) 58.71%);
+}
+.button{
+  position: fixed;
+  top: 75%;
+  left: 5%;
+  width: 80px;
+}
+}
+
+
+/**this is for profile page**/
+
+#profile-page {
+
+  .position {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .profile {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 30rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 2rem;
+    overflow-y: hidden;
+  }
+  .profile-info{
+    background-color: white;
+    max-width: 10rem;
+    position: grid;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+/**this is for movie list page
+                                  note: this is the for the page of list of movies, not inventory but movie list to buy movies
+**/
+#movielist-page{
+  .background{
+    position:static; 
+  }
+ /**this is the text and layout for positioning for text and the picture**/
+  .upper-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 30rem;
+    max-height: 30rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-left: 5rem;
+  }
+  .left{
+    position:absolute;
+    width: 80%;
+    padding-top: 8rem;
+    color:rgb(255, 255, 255);
+    font-size: larger;
+    z-index: 1;
+  }
+
+  /**this is the rock banner/picture with filter**/
+  .right{
+    width: 100%;
+    height: 200px;
+  }
+  .background{
+    max-width: 100%;
+    width: 100%;
+    height: 100rem;
+    max-height: 100rem;
+    overflow: hidden;
+    background-color: #2A2B2A;
+    z-index: -2;
+  }
+  .banner{
+    background-image:
+        url(../../assets/images/therock.png);
+    background-size: cover;
+    background-position: right center;
+    width: 960px;
+    height: 640px;
+  }
+  .banner-filter{
+    background: linear-gradient(
+      to left, transparent, #2A2B2A
+    );
+    width: 960px;
+    height: 50%;
+    position: absolute;
+  }
+
+  .movie-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    display:block;
+  }
+
+  .filter-btn{
+    padding-top: 5px;
+  }
+
+  #movieList{
+    width: 100%;
+    min-height: 800px;
+    height: 300px;
+    z-index: 300;
+    color: white;
+  }
+
+  /**this is the container and boxes for the movies**/
+  .box-container, #movieList{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0%;
+    width: 100%;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    z-index: 5;
+  }
+
+
+}
+
+/**this is for the movieinfo page**/
+#movieinfo-page{
+  .background{
+    background-image:
+    url(../../assets/images/hobbs-shaw.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 1000px;
+      width: fit-content;
+      min-height: 100%;
+      min-width: 100%;
+  }
+
+  /**this is the background box for the movie picture and the cast members**/
+  .box{
+    background-color: rgba(0, 0, 0, 0.485);
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-60%, -30%);
+    max-width: fit-content;
+    max-height: fit-content;
+    min-width: 1250px;
+    min-height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  /**this is the right side of the page**/
+  .right{
+    align-items: center;
+    float: left;
+    padding: 20px;
+    overflow-y: hidden;
+  }
+  .right-photo{
+    width: fit-content;
+    height: auto;
+    min-height: 800px;
+    min-width: 500px;
+    border-radius: 10px;
+  }
+  /**this is for the left side of the page**/
+  .left{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    float: left;
+    padding: 20px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+  }
+  .float-container{
+    overflow: hidden;
+    margin-top: 15%;
+    padding: 20px;
+  }
+  .float-child{
+    width: auto;
+    float: left;
+    padding: 20px;
+    color: white;
+  }
+  .description222{
+    max-width: 100%;
+  }
+  .picture{
+    height: 110px;
+    width: 80px;
+    border-radius: 50px;
+  }
+}
+/**this is for the about page**/
+#about-page{
+/**this is the framework? the layout of where things should be**/
+  .box-layout{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 7rem;
+  }
+  .box-background{
+    background-color: rgba(0, 0, 0, 0.485);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 1.5rem;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    line-height: 1.5rem;
+    font-family:  'Arial Narrow', sans-serif;
+  }
+  .photo{
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+/**this is for contact page**/
+#contact-page{
+  .background{
+    background-image: url(../../assets/images/contact-us.png);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: fit-content;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  /**this is the contact us banner/text**/
+  .title{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    top: 9.5rem;
+  }
+  .background-filter{
+    background: linear-gradient(
+      to left, transparent, #2A2B2A
+    );
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  /**this is the box in the middle**/
+  .box {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 30rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 2rem;
+    overflow-y: hidden;
+  }
+  /**this is the framework for the box, to make it 2 colons**/
+  .grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0%;
+    width: 100%;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    z-index: 5;
+  }
+  /**i just learned that doing this way is more clean than the way i did untill now, 
+  will try my best doing this way from now on**/
+  .left, .right, .text-decoration{
+    color: #ffffff;
+  }
+/**this is the code that i got from google symbols**/
+.material-symbols-outlined {
+  position:absolute;
+  left:7%;
+  transform: translate(-50%, -20%);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+}
+/**this is for checkout page**/
+#checkout-page{
+/**this is the box in the middle of screen**/
+  .box{
+    position: absolute;
+    width:40%;
+    min-width: fit-content;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  /**this is the layout fix for left/right side of the box**/
+  .grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0%;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 5%;
+    padding-top: 2rem;
+    z-index: 5;
+    width: 50%;
+  }
+  .left{
+    max-width: 15rem;
+  }
+
+  /**this is the shopping list**/
+  .shopping-list{
+    background-color: #ffffff;
+    border-radius: 2rem;
+    width: 100%;
+    height: 50%;
+    min-width: 40rem;
+    min-height: 15rem;
+  }
+  .title, .button{
+    text-align: center;
+  }
+  /**this is for the config/layout design for payment info thing**/
+  .shopping-items, .cards, .card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #000000;
+    padding-left: 1rem;
+    width:fit-content;
+    min-width: fit-content;
+  }
+  .cardpayment{
+    color: white;
+  }
+  .right{
+    width: 100%;
+    min-width: 50%;
+  }
+  .pay-box{
+    background-color: #ffffff;
+    width:80%;
+    height: 10%;
+    border-radius: 5px;
+    padding: 0.05px;
+    overflow:hidden;
+  }
+  .fit-content{
+    max-width: 50%;
+  }
+  .button{
+    position: fixed;
+    top: 70%;
+    left: 60%;
+    width: 80px;
+    z-index: 100;
+  }
+}
+/**this is for the checkout success page**/
+#checkoutsucsess-page{
+  .box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 20rem;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 2rem;
+    overflow-y: hidden;
+  }
+  .text{
+    color: #ffffff;
+    text-align: center;
+  }
+  .button, #reset{
+    left: 45%;
+    bottom: 2rem;
+  }
+}
+/**this is for the my movies/inventory page 
+                                              note:  not the movie list but inventory, 2 different pages
+**/
+#inventory-page{
+  .box-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0%;
+    width: 100%;
+    padding-left: 5rem;
+    padding-top: 7rem;
+    z-index: 5;
+  }
+  .movie-box, .movie-box > a > img{
+    display: flex;
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  .picture-fit{
+    height: 100%;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+  }
+  .picture-fit:hover{
+    transform: scale(1.1);
+  }
+}
+/**idk how to do this working yet, but this is for the movie player page to "watch the movie"**/
+/**this is the css part for the movie player page**/
+#play-movie-page{
+  .movieplayer{
+    background-color:#1d1d1d;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    min-height: 50%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.50);
+  }
+  .play-button{
+    top: 50%;
+    left: 50%;
+    scale: 2;
+  }
+  .fullscreen{
+    top: 95%;
+    left: 95%;
+  }
+  .volume{
+    top: 95%;
+    left: 90%;
+  }
+  .time{
+    top: 95%;
+    left: 10%;
+  }
+  .play-button, .fullscreen, .volume, .time{
+    position:fixed;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    color: white;
+  }
+}
+
+
+/**this is the config for the button on checkout and checkoutsucsess page**/
+#reset{
+  position: absolute;
+  max-width: 10rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  bottom: 4rem;
+  z-index: 50;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-out 50ms;
+  color: #ffffff;
+}
+#reset:hover{
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+#reset{
+  text-decoration: none;
 }

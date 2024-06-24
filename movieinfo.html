@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is a page with movie information">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SquareEyes MovieInfo</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" href="assets/images/SquareEyes_Logo.png">
+  <script type="module" src="./movieinfo.mjs"></script>
+</head>
+
+<body id="movieinfo-page">
+  <header>
+    <nav> 
+        <!--this i got from https://www.geeksforgeeks.org/html-course-building-header-of-the-website/ -->
+        <!--this is the header-->
+       <div class="header">
+        <div class="logo">
+            <a href="index.html"><img class="logo" src="assets/images/SquareEyes_Logo.png" alt="SquareEyes Logo"></a>
+        </div>
+        <div id="menu">
+
+            <ul>
+              <li>
+                  <a href="profilepage.html">Profile</a>
+              </li>
+              <li>
+                  <a href="inventory.html">My movies</a>
+              </li>
+              <li>
+                  <a href="movielist.html">Browse</a>
+              </li>
+              <li>
+                  <a href="checkout.html">Cart</a>
+              </li>
+          </ul>
+  
+          </div>
+        </div>
+        <!--this is the end of the copied codes, i made some changes to fit the site-->
+    </nav>
+</header>
+<!--this is the background-->
+<div class="background">
+<!--this is the div that contains the box in the middle of screen-->
+  <div class="box">
+<!--this is the right and left side of the box in the middle-->
+    <div class="right">
+      <div class="right-photo"> 
+        <img id="image"> <!--this is the html for javascript image-->
+      </div>
+    </div>
+    <div class="left">
+      <div>
+        <h1 id="title"></h1><!--this is the html for javascript title-->
+      </div>
+      <div class="description222">
+        <p id="description"></p><!--this is the html for javascript description-->
+        <p id="genre"></p><!--this is the html for javascript genre-->
+        <p id="price"></p><!--this is the html for javascript price-->
+      </div>
+    </div>
+    <div class="float-container">
+  
+    </div>
+    
+
+    <!--this is the end div of box-->
+  </div>
+
+
+</div>
+
+
+
+
+<!--this is the footer-->
+<footer>
+    <div class="footer">
+        <p> all right covered &copy;</p>
+      <div id="menu">
+
+        <li>
+          <a href="contactus.html">Contact us</a>
+        </li>
+        <li>
+          <a href="about.html">About us</a>
+        </li>
+
+      </div>    
+    </div>
+</footer>
+
+
+</body>
+</html>
