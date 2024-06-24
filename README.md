@@ -17,7 +17,8 @@ this project was for everything i learned at the start and put to the test on ho
 
 2. Do your thing:
 
-  you can edit it, change it, do whatever you wish with it. as this was a school project i made.
+  this repository should be open, so cloning should be not a issue
+  click on the big green button that says code, then click on "open with github desktop" when that app starts then you can click open with VSC (visual studio code)
 
 ## Contributing
 
