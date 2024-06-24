@@ -1,5 +1,8 @@
 # HTML & CSS Course Assignment
 
+![squareeyes](https://github.com/OGTrizzy/html-css-course-assignment-OGTrizzy/assets/142795941/d8b119b7-f271-4926-9721-6f584825006e)
+
+
 ## Description
 
 this project was for everything i learned at the start and put to the test on how well i could get it done.
